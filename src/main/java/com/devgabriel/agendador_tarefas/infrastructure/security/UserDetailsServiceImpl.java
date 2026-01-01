@@ -15,11 +15,8 @@ public class UserDetailsServiceImpl{
     @Autowired
     private UsuarioClient client;
 
-
     // Implementação do método para carregar detalhes do usuário pelo e-mail
-
     public UserDetails carregaDadosUsuario(String email, String token){
-
         UsuarioDTO usuarioDTO = client.buscarUsuarioPorEmail(email,token);
         return User
                 .withUsername(usuarioDTO.getEmail()) // Define o nome de usuário como o e-mail
