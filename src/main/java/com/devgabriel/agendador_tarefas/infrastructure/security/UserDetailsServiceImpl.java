@@ -16,7 +16,7 @@ public class UserDetailsServiceImpl{
     private UsuarioClient client;
 
 
-    // Implementação do método para carregar detalhes do usuário pelo e-mail
+
 
     public UserDetails carregaDadosUsuario(String email, String token){
 
